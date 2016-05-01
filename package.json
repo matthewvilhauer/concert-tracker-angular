@@ -1,0 +1,28 @@
+{
+  "name": "concert-tracker-angular",
+  "version": "1.0.0",
+  "description": "Concert Tracker App refactored with Angular",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/Users/matthewvilhauer/wdi/concert-tracker-angular/.git/"
+  },
+  "keywords": [
+    "Concerts",
+    "Bands",
+    "Live",
+    "Music",
+    "Fans"
+  ],
+  "author": "Matthew Vilhauer",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.14",
+    "nodemon": "^1.9.2"
+  }
+}

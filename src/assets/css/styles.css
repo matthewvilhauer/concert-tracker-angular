@@ -1,0 +1,45 @@
+.jumbotron {
+  background-image: url(../img/cheese_front_row.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jumbotron .container {
+  height: 550px;
+}
+
+#site-header {
+  color: white;
+}
+#site-sub-header {
+  color: white;
+}
+#bands-header {
+  text-align: center;
+}
+.band-name {
+  text-align: center;
+}
+.band-image {
+  width:100%;
+  margin-bottom: 30px;
+}
+.band-row {
+  padding-left: 10px;
+}
+
+.bands-index-fields {
+  font-size: 18px;
+}
+
+.update-band-button {
+  margin-right: 10px;
+}
+.save-band-button {
+  margin-right: 10px;
+}
+.panel-footer {
+  height: 55px;
+}
+.update-band {
+  width: 100%;
+}
