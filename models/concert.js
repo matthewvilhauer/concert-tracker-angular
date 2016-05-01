@@ -5,14 +5,15 @@ var Band = require("./band.js");
 // var Recording = require("./recording.js");
 
 var ConcertSchema = new Schema({
-    eventName: String,
+    name: String,
     date: Date,
     description: String,
     location: String,
-    image_url: String,
-    recording_url: String,
+    coordinates: String,
+    image: String,
+    recording: String,
     setlist: String,
-    band: {type : Schema.Types.ObjectId, ref : 'Band'}
+    bands: {type : Schema.Types.ObjectId, ref : 'Band'}
 });
 
 var Concert = mongoose.model('Concert', ConcertSchema);
