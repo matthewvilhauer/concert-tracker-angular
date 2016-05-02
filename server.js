@@ -22,7 +22,7 @@ var controllers = require('./controllers');
  */
 
 app.get('/', function homepage (req, res) {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 

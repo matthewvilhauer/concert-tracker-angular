@@ -1,7 +1,8 @@
 .jumbotron {
-  background-image: url(../img/cheese_front_row.jpg);
+  background-image: url(./img/cheese_front_row.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: blue;
 }
 .jumbotron .container {
   height: 550px;
