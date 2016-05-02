@@ -8,9 +8,9 @@ function BandsIndexController ($http) {
   var vm = this;
   vm.newBand = {};
   vm.newBand = {
-    name: 'The String Cheese Incident',
-    description: 'Colorado jam band',
-    image: "../../assets/img/String-cheese.jpg"
+    name: 'Enter Artist Name',
+    description: 'Enter Description',
+    image: 'Enter Image'
   };
 
   $http({

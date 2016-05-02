@@ -1,13 +1,58 @@
 <div class="container">
-  <h2>Bands Index Template</h2>
-  <div ng-repeat="band in bandsIndexCtrl.bands | orderBy: 'name' | filter: searchText" class="row">
+  <div class="row">
     <div class="col-md-10 col-md-offset-1">
+
+      <form class="form-horizontal" ng-submit="bandsIndexCtrl.createBand()">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>Add New Band</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Band Name</label>
+            <div class="col-md-4">
+            <input id="name" ng-model="bandsIndexCtrl.newBand.name" type="text" class="form-control input-md" required="">
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Description</label>
+            <div class="col-md-4">
+            <textarea ng-model="bandsIndexCtrl.newBand.description" type="text" class="form-control input-md"></textarea>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Image</label>
+            <div class="col-md-4">
+            <textarea ng-model="bandsIndexCtrl.newBand.image" type="text" class="form-control input-md"></textarea>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label">Save Band</label>
+            <div class="col-md-4">
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div ng-repeat="band in bandsIndexCtrl.bands | orderBy: 'id' | filter: searchText" class="row">
+    <div class="col-md-10 col-md-offset-1">
+
       <div class="panel panel-default">
         <div class="panel-body">
 
           <div class='row'>
             <div class="col-md-3 col-xs-12 thumbnail">
-              <img src="{{band.image}}" alt="band image">
+              <img src="{{band.image}}" alt="band-image">
             </div>
 
             <div class="col-md-9 col-xs-12">
@@ -22,6 +67,11 @@
                   <h4 class='inline-header'>Description:</h4>
                   <span ng-hide="editing">{{band.description}}</span>
                   <input ng-show="editing" ng-model="band.description" type="text" class="form-control input-md">
+                </li>
+
+                <li ng-show="editing" class="list-group-item">
+                  <h4 class='inline-header'>Image URL:</h4>
+                  <input ng-model="band.image" type="text" class="form-control input-md">
                 </li>
 
                 <!-- <li class="list-group-item">
