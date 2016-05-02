@@ -8,12 +8,12 @@ function config ($routeProvider, $locationProvider) {
       templateUrl: 'templates/bands',
       controllerAs: 'bandsIndexCtrl',
       controller: 'BandsIndexController'
+    })
+    .when('/:id', {
+      templateUrl: 'templates/bands-show',
+      controllerAs: 'bandsShowCtrl',
+      controller: 'BandsShowController'
     });
-    // .when('/:id', {
-    //   templateUrl: 'templates/albums-show',
-    //   controllerAs: 'albumsShowCtrl',
-    //   controller: 'AlbumsShowController'
-    // });
 
     $locationProvider.html5Mode({
       enabled: true,

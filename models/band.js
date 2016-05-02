@@ -7,7 +7,7 @@ var BandSchema = new Schema({
     name: String,
     description: String,
     image: String,
-    concertperformances: [ {type : Schema.Types.ObjectId, ref : 'Concert'} ],
+    concerts: [ {type : Schema.Types.ObjectId, ref : 'Concert'} ],
 });
 
 var Band = mongoose.model('Band', BandSchema);
