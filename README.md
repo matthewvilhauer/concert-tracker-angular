@@ -2,7 +2,7 @@
 
 Refactor of Concert Tracker App Using Angular
 
-This is the second iteration of the concert tracker app. This time I around I wanted to use Angular for the front end. As a result, my code base (in particular my controllers) was much cleaner. I had far less repitition since I was not forced to use only JQuery and handlebars to render templates.
+This is the second iteration of the concert tracker app. This time I around I wanted to use Angular for the front end. As a result, my code (in particular the controllers) was much cleaner. I had far less repitition since I was not forced to use only JQuery and handlebars to render templates.
 
 I was also able to integrate my newly developed back-end app (Concert Tracker API - https://github.com/matthewvilhauer/concert-tracker-api) to handle the data reqests for this app. So Concert Tracker Angular does the front-end work while Concert Tracker API handles the back end.
 
