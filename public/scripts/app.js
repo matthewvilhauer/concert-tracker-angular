@@ -11,8 +11,8 @@ function config ($routeProvider, $locationProvider) {
     })
     .when('/:id', {
       templateUrl: 'templates/bands-show',
-      controllerAs: 'bandsShowCtrl',
-      controller: 'BandsShowController'
+      // controllerAs: 'bandsShowCtrl',
+      // controller: 'BandsShowController'
     });
 
     $locationProvider.html5Mode({
